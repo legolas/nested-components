@@ -8,12 +8,13 @@ import { Data } from '../data';
 })
 export class RightComponent implements OnInit {
 
-  @Input() data: Data;
+  @Input() parentId: string;
+  @Input() message: string;
 
   constructor() { }
 
   ngOnInit() {
-    console.info('Data', this.data);
+    console.info('parentID', this.parentId, 'message', this.message);
   }
 
 }
